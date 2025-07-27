@@ -1,0 +1,11 @@
+export { default as Icon } from './components/Icon.svelte';
+export { default as Hero } from './components/Hero.svelte';
+export { default as Footer } from './components/Footer.svelte';
+export { default as Navbar } from './components/Navbar.svelte';
+export { default as HomeBlock } from './components/HomeBlock.svelte';
+export { default as HomeBlock2 } from './components/HomeBlock2.svelte';
+export { default as HomeBlock3 } from './components/HomeBlock3.svelte';
+export { default as HomeBlock4 } from './components/HomeBlock4.svelte';
+export { default as HomeBlock5 } from './components/HomeBlock5.svelte';
+export { default as HomeBlock6 } from './components/HomeBlock6.svelte';
+export { default as EnhancedImage } from './components/EnhancedImage.svelte';
