@@ -126,8 +126,12 @@
 							/>
 						</div>
 
-						<div class="poppins text-dark text-lg font-semibold">{title}</div>
-						<div class="poppins text-dark-lighter line-clamp-6 text-sm leading-[160%]">{intro}</div>
+						<div class="poppins text-dark text-lg font-semibold">
+							{title}
+						</div>
+						<div class="poppins text-dark-lighter line-clamp-6 text-sm leading-[160%]">
+							{intro}
+						</div>
 					</div>
 				{/each}
 			</div>

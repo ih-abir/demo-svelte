@@ -22,12 +22,19 @@
 <section class="section-v-pad grid bg-transparent">
 	<div class="wrapper division-row-gap grid">
 		<div
-			class="mx-auto flex w-full !max-w-[750px] flex-wrap items-center justify-evenly gap-[clamp(2.5rem,0.5rem+5vw,5rem)]"
+			class={[
+				'flex w-full !max-w-[750px] flex-wrap justify-evenly',
+				'mx-auto items-center gap-[clamp(2.5rem,0.5rem+5vw,5rem)]'
+			].join(' ')}
 		>
 			{#each logos as src}
 				<Icon
 					{src}
-					className="size-[clamp(60px,2.75rem+2.5vw,80px)] grayscale hover:grayscale-0 opacity-40 hover:opacity-100 transition-all duration-300 ease-in-out cursor-pointer"
+					className={[
+						'size-[clamp(60px,2.75rem+2.5vw,80px)]',
+						'grayscale hover:grayscale-0 opacity-40 hover:opacity-100',
+						'transition-all duration-300 ease-in-out cursor-pointer'
+					].join(' ')}
 				/>
 			{/each}
 		</div>
@@ -55,7 +62,11 @@
 					{#each socialLogos as src}
 						<Icon
 							{src}
-							className="size-5 grayscale hover:grayscale-0 opacity-40 hover:opacity-100 transition-all duration-300 ease-in-out cursor-pointer"
+							className={[
+								'size-5 grayscale hover:grayscale-0',
+								'opacity-40 hover:opacity-100 transition-all',
+								'duration-300 ease-in-out cursor-pointer'
+							].join(' ')}
 						/>
 					{/each}
 				</div>
@@ -96,7 +107,10 @@
 				<textarea
 					rows="4"
 					placeholder="Your message"
-					class="focus-within:border-primary w-full border-b-2 border-gray-300 py-2 font-bold placeholder-gray-500 outline-none"
+					class={[
+						'w-full py-2 font-bold placeholder-gray-500 outline-none',
+						'focus-within:border-primary border-b-2 border-gray-300'
+					].join(' ')}
 				></textarea>
 
 				<div class="flex flex-wrap md:flex-nowrap">
@@ -106,7 +120,10 @@
 					</p>
 
 					<button
-						class="btn bg-primary h-fit w-fit flex-none text-white shadow-[0_10px_20px_rgb(0_0_0_/_0.07)]"
+						class={[
+							'btn bg-primary h-fit w-fit flex-none',
+							'text-white shadow-[0_10px_20px_rgb(0_0_0_/_0.07)]'
+						].join(' ')}
 					>
 						Send message
 					</button>

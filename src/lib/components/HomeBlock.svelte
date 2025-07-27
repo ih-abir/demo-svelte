@@ -55,10 +55,16 @@
 		<div class="reveal-up grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
 			{#each items as { title, intro, img, btnTxt }}
 				<div
-					class="h-full bg-white p-2.5 transition-all duration-350 ease-in-out hover:-translate-y-[3px] hover:shadow-[0_2px_30px_rgb(0_0_0_/_0.1)]"
+					class={[
+						'h-full bg-white p-2.5 hover:shadow-[0_2px_30px_rgb(0_0_0_/_0.1)]',
+						'transition-all duration-350 ease-in-out hover:-translate-y-[3px]'
+					].join(' ')}
 				>
 					<div
-						class="division-gap hover:border-primary grid h-full content-between border border-gray-200 px-[35px] py-[60px]"
+						class={[
+							'division-gap grid h-full content-between',
+							'hover:border-primary border border-gray-200 px-[35px] py-[60px]'
+						].join(' ')}
 					>
 						<div class="division-in-gap grid">
 							<Icon src={img} className="fill-primary mx-auto size-[80px]" />
@@ -69,7 +75,10 @@
 						<div>
 							<a
 								href="/"
-								class="poppins text-dark hover:text-primary/90 text-sm font-bold hover:underline"
+								class={[
+									'poppins text-dark text-sm font-bold',
+									'hover:text-primary/90 hover:underline'
+								].join(' ')}
 							>
 								{btnTxt}
 								<span class="text-primary !hover:no-underline ml-2.5">🡪</span>

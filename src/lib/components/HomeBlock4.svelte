@@ -43,7 +43,10 @@
 			<div class="division-gap grid grid-cols-3">
 				<div
 					use:countOnIntersect
-					class="counter text-primary col-span-1 text-[clamp(2.5rem,1rem+3.75vw,4.375rem)] font-bold"
+					class={[
+						'counter text-primary col-span-1 font-bold',
+						'text-[clamp(2.5rem,1rem+3.75vw,4.375rem)]'
+					].join(' ')}
 				>
 					195
 				</div>
@@ -62,7 +65,10 @@
 			<div class="division-gap grid grid-cols-3">
 				<div
 					use:countOnIntersect
-					class="counter text-primary col-span-1 text-[clamp(2.5rem,1rem+3.75vw,4.375rem)] font-bold"
+					class={[
+						'counter text-primary col-span-1 font-bold',
+						'text-[clamp(2.5rem,1rem+3.75vw,4.375rem)]'
+					].join(' ')}
 				>
 					84
 				</div>

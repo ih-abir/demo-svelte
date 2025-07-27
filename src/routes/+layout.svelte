@@ -28,7 +28,10 @@
 	<title>🎶 Identity Music: UK digital music distribution for independent artists & labels</title>
 	<meta
 		name="description"
-		content="Upload your music to global streaming services with Identity Music's distribution platform. UK experts in music promotion, rights management, distribution & publishing. Friendly support team, fast upload times & exclusive promotional support for independent artists & labels across the world. Publish your music now!"
+		content="Upload your music to global streaming services with Identity Music's distribution platform. 
+		UK experts in music promotion, rights management, distribution & publishing. 
+		Friendly support team, fast upload times & exclusive promotional support for independent 
+		artists & labels across the world. Publish your music now!"
 	/>
 </svelte:head>
 

@@ -55,10 +55,17 @@
 </script>
 
 <div
-	class="reveal-up section division-gap bg-dark grid items-center text-white lg:grid-cols-10 xl:grid-cols-3 2xl:grid-cols-2"
+	class={[
+		'reveal-up section grid lg:grid-cols-10 xl:grid-cols-3 2xl:grid-cols-2',
+		'division-gap bg-dark items-center text-white'
+	].join(' ')}
 >
 	<div
-		class="section-v-pad col-span-1 mx-auto w-full px-[min(100px,4vw)] text-center lg:col-span-2 lg:mr-0 lg:max-w-[650px] lg:pr-0 lg:text-left xl:col-span-1"
+		class={[
+			'col-span-1 lg:col-span-2 xl:col-span-1',
+			'section-v-pad w-full lg:max-w-[650px]',
+			'mx-auto px-[min(100px,4vw)] text-center lg:mr-0 lg:pr-0 lg:text-left'
+		].join(' ')}
 	>
 		<h2>
 			What<br />
@@ -68,12 +75,18 @@
 	</div>
 
 	<div
-		class="group carousel-wrapper relative col-span-1 lg:col-span-8 xl:col-span-2 2xl:col-span-1"
+		class={[
+			'group carousel-wrapper relative',
+			'col-span-1 lg:col-span-8 xl:col-span-2 2xl:col-span-1'
+		].join(' ')}
 		use:carousel
 	>
 		<button
 			data-scroll="-1"
-			class="arrow left transition-all duration-300 ease-in-out group-hover:opacity-100 lg:opacity-0"
+			class={[
+				'arrow left group-hover:opacity-100 lg:opacity-0',
+				'transition-all duration-300 ease-in-out'
+			].join(' ')}
 		>
 			&#10094;
 		</button>
@@ -119,7 +132,10 @@
 		</div>
 		<button
 			data-scroll="1"
-			class="arrow right transition-all duration-300 ease-in-out group-hover:opacity-100 lg:opacity-0"
+			class={[
+				'arrow right group-hover:opacity-100 lg:opacity-0',
+				'transition-all duration-300 ease-in-out'
+			].join(' ')}
 		>
 			&#10095;
 		</button>
