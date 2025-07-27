@@ -8,4 +8,3 @@ export { default as HomeBlock3 } from './components/HomeBlock3.svelte';
 export { default as HomeBlock4 } from './components/HomeBlock4.svelte';
 export { default as HomeBlock5 } from './components/HomeBlock5.svelte';
 export { default as HomeBlock6 } from './components/HomeBlock6.svelte';
-export { default as EnhancedImage } from './components/EnhancedImage.svelte';
