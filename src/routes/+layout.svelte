@@ -1,9 +1,8 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import '$styles/style.scss';
-	import { Navbar, Footer, EnhancedImage } from '$lib';
+	import { Navbar, Footer } from '$lib';
 
-	import bgImage from '$assets/bg-image.webp';
 	import Brand from '$assets/brand-favicon.svg';
 
 	onMount(() => {
@@ -34,13 +33,15 @@
 </svelte:head>
 
 <div class="size-screen fixed inset-0 z-[-99] bg-cover bg-center">
-	<EnhancedImage
-		src={bgImage}
+	<enhanced:img
+		src="$assets/bg-image.webp?enhanced&w=325;415;639;767;1023;665;1440;1920"
 		alt="background"
-		className="h-full w-full object-cover"
-		sizes="(max-width: 325px) 325px, (max-width: 415px) 415px,
-           (max-width: 639px) 639px, (max-width: 767px) 767px,
-           (max-width: 1023px) 1023px, (max-width: 1440px) 1440px, 1920px"
+		class="h-full w-full object-cover"
+		sizes={[
+			'(max-width: 325px) 325px, (max-width: 415px) 415px',
+			'(max-width: 639px) 639px, (max-width: 767px) 767px',
+			'(max-width: 1023px) 1023px, (max-width: 1440px) 1440px, 1920px'
+		].join(', ')}
 	/>
 </div>
 
