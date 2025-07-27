@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Icon, EnhancedImage } from '$lib';
+	import { Icon } from '$lib';
 	import Brand from '$assets/brand-logo.png?enhanced&w=110;130;150';
 	import menuIcon from '$assets/menu-icon.svg?raw';
 	import closeIcon from '$assets/close-icon.svg?raw';
