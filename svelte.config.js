@@ -8,7 +8,10 @@ const config = {
 	preprocess: vitePreprocess(),
 	kit: {
 		adapter: adapter({
-			strict: false
+			pages: 'build',
+			assets: 'build',
+			fallback: null, // or 'index.html' if you're using SPA-style routing
+			precompress: false
 		}),
 		alias: {
 			$lib: 'src/lib',
