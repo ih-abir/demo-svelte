@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { Icon } from '$lib';
 	import { carousel } from '$lib/actions/carousel';
+	import { highlightCarousel } from '$lib/actions/highlightCarousel';
 
 	import quoteIcon from '$assets/quote-right.svg?raw';
 
@@ -80,6 +81,7 @@
 			'col-span-1 lg:col-span-8 xl:col-span-2 2xl:col-span-1'
 		].join(' ')}
 		use:carousel
+		use:highlightCarousel
 	>
 		<button
 			data-scroll="-1"
